@@ -81,10 +81,181 @@ nav a:hover {
 /* Main Content Styles */
 main {
     flex: 1;
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Section Container */
+.section-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Preview Sections */
+.about-preview,
+.services-preview,
+.products-preview,
+.contact-cta {
+    padding: 4rem 0;
+}
+
+.about-preview {
+    background: #f9f9f9;
+}
+
+.services-preview {
+    background: white;
+}
+
+.products-preview {
+    background: #f9f9f9;
+}
+
+.contact-cta {
+    background: linear-gradient(135deg, #4CAF50 0%, #2196F3 100%);
+    color: white;
+    text-align: center;
+}
+
+.section-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+.contact-cta h2 {
+    color: white;
+}
+
+.section-container > p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-cta p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Preview Grid */
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.preview-card {
+    background: white;
     padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services-preview .preview-card {
+    border-top: 4px solid #4CAF50;
+}
+
+.products-preview .preview-card {
+    border-top: 4px solid #2196F3;
+}
+
+.preview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.preview-card h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.preview-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Link Button */
+.link-btn {
+    display: inline-block;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    text-align: center;
     width: 100%;
+    margin-top: 1rem;
+}
+
+.link-btn:hover {
+    color: #45a049;
 }
 
 .content-section {

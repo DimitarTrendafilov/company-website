@@ -9,17 +9,31 @@ const translations = {
         products: "Products",
         contact: "Contact",
         
-        // Index page
-        welcomeTitle: "Welcome Section",
-        welcomeText: "Main content will be displayed here.",
-        aboutTitle: "About Section",
-        aboutText: "Information about the company will be displayed here.",
-        servicesTitle: "Services Section",
-        servicesText: "Services offered by the company will be displayed here.",
-        productsTitle: "Products Section",
-        productsText: "Products offered by the company will be displayed here.",
-        contactTitle: "Contact Section",
-        contactText: "Contact information will be displayed here.",
+        // Index page - Hero
+        heroTitle: "Welcome to Company Name",
+        heroSubtitle: "Innovative solutions for your business success. We transform ideas into reality with cutting-edge technology.",
+        exploreServices: "Explore Our Services",
+        getInTouch: "Get in Touch",
+        
+        // Index page - Sections
+        aboutTitle: "About Us",
+        aboutText: "We are a leading technology company dedicated to delivering innovative solutions that drive business growth. With over 10 years of experience and a team of 50+ specialists, we help businesses transform through technology.",
+        learnMore: "Learn More",
+        
+        servicesTitle: "Our Services",
+        servicesText: "We offer comprehensive technology solutions tailored to your business needs.",
+        viewAllServices: "View All Services →",
+        
+        productsTitle: "Our Products",
+        productsText: "Innovative software products designed for business excellence.",
+        prod1Preview: "AI-powered analytics platform for data-driven decisions.",
+        prod2Preview: "Secure cloud platform for corporate data management.",
+        prod3Preview: "Project management system with collaboration tools.",
+        viewAllProducts: "View All Products →",
+        
+        contactTitle: "Ready to Start Your Project?",
+        contactText: "Get in touch with our team to discuss how we can help transform your business with innovative technology solutions.",
+        contactButton: "Contact Us Now",
         
         // Footer
         quickLinks: "Quick Links",
@@ -231,17 +245,31 @@ const translations = {
         products: "Продукти",
         contact: "Контакти",
         
-        // Index page
-        welcomeTitle: "Секция Добре Дошли",
-        welcomeText: "Основното съдържание ще бъде показано тук.",
-        aboutTitle: "За Нас Секция",
-        aboutText: "Информация за компанията ще бъде показана тук.",
-        servicesTitle: "Секция Услуги",
-        servicesText: "Предлаганите от компанията услуги ще бъдат показани тук.",
-        productsTitle: "Секция Продукти",
-        productsText: "Продуктите, предлагани от компанията, ще бъдат показани тук.",
-        contactTitle: "Секция Контакти",
-        contactText: "Информацията за контакт ще бъде показана тук.",
+        // Index page - Hero
+        heroTitle: "Добре дошли в Company Name",
+        heroSubtitle: "Иновативни решения за успеха на вашия бизнес. Превръщаме идеите в реалност с най-съвременни технологии.",
+        exploreServices: "Разгледайте Нашите Услуги",
+        getInTouch: "Свържете се с нас",
+        
+        // Index page - Sections
+        aboutTitle: "За Нас",
+        aboutText: "Ние сме водеща технологична компания, посветена на предоставянето на иновативни решения, които стимулират растежа на бизнеса. С над 10 години опит и екип от 50+ специалисти помагаме на бизнеса да се трансформира чрез технологии.",
+        learnMore: "Научете Повече",
+        
+        servicesTitle: "Нашите Услуги",
+        servicesText: "Предлагаме цялостни технологични решения, съобразени с нуждите на вашия бизнес.",
+        viewAllServices: "Вижте Всички Услуги →",
+        
+        productsTitle: "Нашите Продукти",
+        productsText: "Иновативни софтуерни продукти, проектирани за бизнес върхови постижения.",
+        prod1Preview: "AI-базирана платформа за анализ за решения, базирани на данни.",
+        prod2Preview: "Сигурна облачна платформа за управление на корпоративни данни.",
+        prod3Preview: "Система за управление на проекти с инструменти за сътрудничество.",
+        viewAllProducts: "Вижте Всички Продукти →",
+        
+        contactTitle: "Готови ли сте да започнете вашия проект?",
+        contactText: "Свържете се с нашия екип, за да обсъдим как можем да помогнем за трансформирането на вашия бизнес с иновативни технологични решения.",
+        contactButton: "Свържете се с нас сега",
         
         // Footer
         quickLinks: "Бързи Връзки",
