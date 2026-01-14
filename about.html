@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>За Нас - Company Name</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(33, 150, 243, 0.9) 0%, rgba(76, 175, 80, 0.9) 100%),
+                        url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        main {
+            padding: 4rem 2rem;
+        }
+
+        .about-section {
+            max-width: 1200px;
+            margin: 0 auto 4rem;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .team-section {
+            background: #f4f4f4;
+            padding: 4rem 2rem;
+            margin: 4rem -2rem;
+        }
+
+        .team-grid {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+
+        .member-photo {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .member-info {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .member-name {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-position {
+            color: #4CAF50;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .values-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .value-description {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-section {
+                padding: 2rem;
+            }
+
+            .stats-grid,
+            .team-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Company Name</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="about.html" class="active">За Нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="products.html">Продукти</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>За Нас</h1>
+        <p>Иновации, качество и отдаденост – това е нашата мисия</p>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about-section">
+            <h2>Нашата История</h2>
+            <p>
+                Company Name е основана през 2010 година с визия да трансформира начина, по който бизнесът използва технологиите. 
+                Започнахме като малък екип от ентусиасти, обединени от обща страст към иновациите и качествените решения.
+            </p>
+            <p>
+                През годините израснахме до водеща компания в областта на бизнес технологиите, обслужваща стотици клиенти 
+                в България и чужбина. Нашият успех се крие в посвещението към клиентите и непрекъснатото усъвършенстване.
+            </p>
+            <p>
+                Днес сме горди с екип от над 50 професионалисти, модерни офиси и портфолио от успешно реализирани проекти 
+                в различни индустрии – от финанси и здравеопазване до търговия и производство.
+            </p>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="about-section">
+            <h2>Нашите Постижения</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Проекта</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Клиенти</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Години Опит</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Специалисти</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2 class="about-section" style="background: transparent; box-shadow: none; text-align: center;">Нашият Екип</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">👨‍💼</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Иван Петров</h3>
+                        <p class="member-position">Изпълнителен Директор</p>
+                        <p class="member-bio">15 години опит в IT индустрията. Визионер с фокус върху иновациите.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">👩‍💼</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Мария Димитрова</h3>
+                        <p class="member-position">Технически Директор</p>
+                        <p class="member-bio">Експерт в софтуерна архитектура и управление на технологични проекти.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">👨‍💻</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Георги Георгиев</h3>
+                        <p class="member-position">Мениджър Развойна</p>
+                        <p class="member-bio">Passionate developer и лидер на екип от талантливи програмисти.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">👩‍🎨</div>
+                    <div class="member-info">
+                        <h3 class="member-name">Елена Стоянова</h3>
+                        <p class="member-position">Дизайн Директор</p>
+                        <p class="member-bio">Креативен ум с фокус върху user experience и визуална комуникация.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 1rem;">Нашите Ценности</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3 class="value-title">Качество</h3>
+                    <p class="value-description">
+                        Стремим се към най-високи стандарти във всеки проект и взаимодействие с клиентите.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3 class="value-title">Иновации</h3>
+                    <p class="value-description">
+                        Непрекъснато търсим нови технологии и подходи за решаване на бизнес предизвикателства.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3 class="value-title">Партньорство</h3>
+                    <p class="value-description">
+                        Изграждаме дългосрочни отношения, основани на доверие и взаимна полза.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3 class="value-title">Ангажираност</h3>
+                    <p class="value-description">
+                        Отдадени сме на успеха на нашите клиенти и техния растеж.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Бързи Връзки</h3>
+                    <ul>
+                        <li><a href="index.html">Начало</a></li>
+                        <li><a href="about.html">За Нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="products.html">Продукти</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Поддръжка</h3>
+                    <ul>
+                        <li><a href="#faq">Често Задавани Въпроси</a></li>
+                        <li><a href="#help">Помощ</a></li>
+                        <li><a href="contact.html">Контакти</a></li>
+                        <li><a href="#privacy">Поверителност</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Свържете се</h3>
+                    <ul>
+                        <li><a href="#facebook">Facebook</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#linkedin">LinkedIn</a></li>
+                        <li><a href="#instagram">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Company Name. Всички права запазени. | <a href="#terms">Условия за ползване</a> | <a href="#privacy">Политика за поверителност</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
