@@ -65,10 +65,12 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%),
+                        url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80') center/cover;
             color: white;
             padding: 5rem 2rem;
             text-align: center;
+            position: relative;
         }
 
         .hero h1 {
@@ -116,6 +118,7 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
             text-align: center;
+            overflow: hidden;
         }
 
         .service-card:hover {
@@ -124,15 +127,22 @@
         }
 
         .service-icon {
-            width: 80px;
-            height: 80px;
+            width: 100%;
+            height: 200px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
+            border-radius: 12px 12px 0 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1.5rem;
+            margin: -2rem -2rem 1.5rem -2rem;
             font-size: 2.5rem;
+            overflow: hidden;
+        }
+
+        .service-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .service-card h3 {
@@ -401,56 +411,72 @@
         <!-- Services Grid -->
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">💼</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Business Consulting">
+                </div>
                 <h3>Business Consulting</h3>
                 <p>Strategic planning and advisory services to help your business grow and succeed in competitive markets.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">💻</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80" alt="Web Development">
+                </div>
                 <h3>Web Development</h3>
                 <p>Custom web applications and websites built with modern technologies to enhance your digital presence.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">📱</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80" alt="Mobile Applications">
+                </div>
                 <h3>Mobile Applications</h3>
                 <p>Native and cross-platform mobile apps designed to engage your customers on iOS and Android devices.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">🎨</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80" alt="UI/UX Design">
+                </div>
                 <h3>UI/UX Design</h3>
                 <p>User-centered design solutions that create intuitive and visually appealing digital experiences.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">☁️</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Cloud Solutions">
+                </div>
                 <h3>Cloud Solutions</h3>
                 <p>Scalable cloud infrastructure and migration services to modernize your IT operations.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">📊</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80" alt="Data Analytics">
+                </div>
                 <h3>Data Analytics</h3>
                 <p>Transform your data into actionable insights with advanced analytics and business intelligence tools.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">🔒</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&q=80" alt="Cybersecurity">
+                </div>
                 <h3>Cybersecurity</h3>
                 <p>Comprehensive security solutions to protect your business from cyber threats and vulnerabilities.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
             </div>
 
             <div class="service-card">
-                <div class="service-icon">🤖</div>
+                <div class="service-icon">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80" alt="AI & Machine Learning">
+                </div>
                 <h3>AI & Machine Learning</h3>
                 <p>Leverage artificial intelligence and machine learning to automate processes and gain competitive advantages.</p>
                 <a href="#" class="learn-more-btn">Learn More</a>
