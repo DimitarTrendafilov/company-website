@@ -31,6 +31,19 @@ const translations = {
         prod3Preview: "Project management system with collaboration tools.",
         viewAllProducts: "View All Products →",
         
+        // References Section
+        referencesTitle: "What Our Clients Say",
+        referencesText: "Hear from businesses we've helped succeed with our technology solutions.",
+        testimonial1Text: "Working with Company Name transformed our business. Their web platform increased our sales by 150% in the first year.",
+        testimonial1Name: "Ivan Petrov",
+        testimonial1Position: "CEO, TechStart Bulgaria",
+        testimonial2Text: "Exceptional service and outstanding results. The mobile app they developed exceeded all our expectations.",
+        testimonial2Name: "Maria Ivanova",
+        testimonial2Position: "Director, Retail Solutions",
+        testimonial3Text: "Professional team with deep technical expertise. They delivered our cloud migration project on time and within budget.",
+        testimonial3Name: "Georgi Dimitrov",
+        testimonial3Position: "IT Manager, Finance Corp",
+        
         contactTitle: "Ready to Start Your Project?",
         contactText: "Get in touch with our team to discuss how we can help transform your business with innovative technology solutions.",
         contactButton: "Contact Us Now",
@@ -266,6 +279,19 @@ const translations = {
         prod2Preview: "Сигурна облачна платформа за управление на корпоративни данни.",
         prod3Preview: "Система за управление на проекти с инструменти за сътрудничество.",
         viewAllProducts: "Вижте Всички Продукти →",
+        
+        // References Section
+        referencesTitle: "Какво Казват Нашите Клиенти",
+        referencesText: "Чуйте от бизнесите, на които помогнахме да успеят с нашите технологични решения.",
+        testimonial1Text: "Работата с Company Name трансформира нашия бизнес. Тяхната уеб платформа увеличи продажбите ни със 150% в първата година.",
+        testimonial1Name: "Иван Петров",
+        testimonial1Position: "Изпълнителен директор, TechStart България",
+        testimonial2Text: "Изключително обслужване и изключителни резултати. Мобилното приложение, което разработиха, надмина всичките ни очаквания.",
+        testimonial2Name: "Мария Иванова",
+        testimonial2Position: "Директор, Retail Solutions",
+        testimonial3Text: "Професионален екип с дълбоки технически познания. Доставиха нашия проект за облачна миграция навреме и в рамките на бюджета.",
+        testimonial3Name: "Георги Димитров",
+        testimonial3Position: "IT Мениджър, Finance Corp",
         
         contactTitle: "Готови ли сте да започнете вашия проект?",
         contactText: "Свържете се с нашия екип, за да обсъдим как можем да помогнем за трансформирането на вашия бизнес с иновативни технологични решения.",
