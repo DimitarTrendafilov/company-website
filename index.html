@@ -10,44 +10,47 @@
     <!-- Header Section -->
     <header>
         <div class="header-container">
-            <div class="logo">Company Name</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="logo" data-translate="logo">Company Name</div>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li><a href="about.html" data-translate="about">About</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
+                        <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="langToggle" title="Switch Language">EN</button>
+            </div>
         </div>
     </header>
 
     <!-- Main Content Section -->
     <main>
         <section id="home" class="content-section">
-            <h2>Welcome Section</h2>
-            <p>Main content will be displayed here.</p>
+            <h2 data-translate="welcomeTitle">Welcome Section</h2>
+            <p data-translate="welcomeText">Main content will be displayed here.</p>
         </section>
 
         <section id="about" class="content-section">
-            <h2>About Section</h2>
-            <p>Information about the company will be displayed here.</p>
+            <h2 data-translate="aboutTitle">About Section</h2>
+            <p data-translate="aboutText">Information about the company will be displayed here.</p>
         </section>
 
         <section id="services" class="content-section">
-            <h2>Services Section</h2>
-            <p>Services offered by the company will be displayed here.</p>
+            <h2 data-translate="servicesTitle">Services Section</h2>
+            <p data-translate="servicesText">Services offered by the company will be displayed here.</p>
         </section>
 
         <section id="products" class="content-section">
-            <h2>Products Section</h2>
-            <p>Products offered by the company will be displayed here.</p>
+            <h2 data-translate="productsTitle">Products Section</h2>
+            <p data-translate="productsText">Products offered by the company will be displayed here.</p>
         </section>
 
         <section id="contact" class="content-section">
-            <h2>Contact Section</h2>
-            <p>Contact information will be displayed here.</p>
+            <h2 data-translate="contactTitle">Contact Section</h2>
+            <p data-translate="contactText">Contact information will be displayed here.</p>
         </section>
     </main>
 
@@ -56,37 +59,38 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
+                    <h3 data-translate="quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="index.html" data-translate="homeLink">Home</a></li>
+                        <li><a href="about.html" data-translate="aboutUs">About Us</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Support</h3>
+                    <h3 data-translate="support">Support</h3>
                     <ul>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#help">Help Center</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#faq" data-translate="faq">FAQ</a></li>
+                        <li><a href="#help" data-translate="helpCenter">Help Center</a></li>
+                        <li><a href="contact.html" data-translate="contactUs">Contact Us</a></li>
+                        <li><a href="#privacy" data-translate="privacyPolicy">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Connect</h3>
+                    <h3 data-translate="connect">Connect</h3>
                     <ul>
-                        <li><a href="#facebook">Facebook</a></li>
-                        <li><a href="#twitter">Twitter</a></li>
-                        <li><a href="#linkedin">LinkedIn</a></li>
-                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook" data-translate="facebook">Facebook</a></li>
+                        <li><a href="#twitter" data-translate="twitter">Twitter</a></li>
+                        <li><a href="#linkedin" data-translate="linkedin">LinkedIn</a></li>
+                        <li><a href="#instagram" data-translate="instagram">Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Company Name. All rights reserved. | <a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a></p>
+                <p>&copy; 2026 <span data-translate="logo">Company Name</span>. <span data-translate="copyright">All rights reserved.</span> | <a href="#terms" data-translate="terms">Terms of Service</a> | <a href="#privacy" data-translate="privacyPolicy">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
+    <script src="js/language.js"></script>
 </body>
 </html>

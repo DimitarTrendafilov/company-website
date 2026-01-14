@@ -30,11 +30,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 nav ul {
@@ -51,6 +58,24 @@ nav a {
 
 nav a:hover {
     color: #4CAF50;
+}
+
+/* Language Toggle Button */
+#langToggle {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#langToggle:hover {
+    background: #45a049;
+    transform: scale(1.05);
 }
 
 /* Main Content Styles */

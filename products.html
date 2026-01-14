@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Нашите Продукти - Company Name</title>
+    <title>Our Products - Company Name</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
 </head>
@@ -11,82 +11,85 @@
     <!-- Header Section -->
     <header>
         <div class="header-container">
-            <div class="logo">Company Name</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Начало</a></li>
-                    <li><a href="#about">За Нас</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="products.html" class="active">Продукти</a></li>
-                    <li><a href="#contact">Контакти</a></li>
-                </ul>
-            </nav>
+            <div class="logo" data-translate="logo">Company Name</div>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li><a href="about.html" data-translate="about">About</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" class="active" data-translate="products">Products</a></li>
+                        <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="langToggle" title="Switch Language">EN</button>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Нашите Продукти</h1>
-        <p>Иновативни решения, разработени с най-съвременни технологии за успеха на вашия бизнес</p>
+        <h1 data-translate="productsHeroTitle">Our Products</h1>
+        <p data-translate="productsHeroSubtitle">Innovative solutions developed with cutting-edge technologies for your business success</p>
     </section>
 
     <!-- Main Content Section -->
     <main>
-        <h2 class="section-title">Открийте Нашата Продуктова Гама</h2>
-        <p class="section-subtitle">От малки стартъпи до големи корпорации - имаме перфектното решение за всеки бизнес</p>
+        <h2 class="section-title" data-translate="discoverOurRange">Discover Our Product Range</h2>
+        <p class="section-subtitle" data-translate="fromStartupsTo">From small startups to large corporations - we have the perfect solution for every business</p>
         
         <!-- Products Grid -->
         <div class="products-grid">
             <!-- Product 1 -->
             <div class="product-card">
-                <span class="product-badge new">Ново</span>
+                <span class="product-badge new" data-translate="badgeNew">New</span>
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Business Analytics Pro">
                 </div>
                 <div class="product-content">
-                    <div class="product-category">Бизнес Аналитика</div>
-                    <h3 class="product-title">Business Analytics Pro</h3>
-                    <p class="product-description">
-                        Мощна платформа за бизнес анализ с AI-базирани прогнози и визуализация на данни в реално време.
+                    <div class="product-category" data-translate="prod1Category">Business Analytics</div>
+                    <h3 class="product-title" data-translate="prod1Title">Business Analytics Pro</h3>
+                    <p class="product-description" data-translate="prod1Desc">
+                        Powerful business analysis platform with AI-based forecasting and real-time data visualization.
                     </p>
                     <ul class="product-features">
-                        <li>Интерактивни дашборди</li>
-                        <li>Прогнозен анализ с AI</li>
-                        <li>Експорт в Excel, PDF</li>
-                        <li>Интеграция с ERP системи</li>
+                        <li data-translate="prod1Feature1">Interactive dashboards</li>
+                        <li data-translate="prod1Feature2">AI predictive analysis</li>
+                        <li data-translate="prod1Feature3">Export to Excel, PDF</li>
+                        <li data-translate="prod1Feature4">ERP system integration</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">
-                            €299 <span>/месец</span>
+                            €299 <span data-translate="perMonth">/month</span>
                         </div>
-                        <button class="product-btn">Поръчай</button>
+                        <button class="product-btn" data-translate="orderNow">Order Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Product 2 -->
             <div class="product-card">
-                <span class="product-badge premium">Популярен</span>
+                <span class="product-badge premium" data-translate="badgePopular">Popular</span>
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="CloudSync Enterprise">
                 </div>
                 <div class="product-content">
-                    <div class="product-category">Облачни Решения</div>
-                    <h3 class="product-title">CloudSync Enterprise</h3>
-                    <p class="product-description">
-                        Сигурна облачна платформа за съхранение, синхронизация и споделяне на корпоративни данни.
+                    <div class="product-category" data-translate="prod2Category">Cloud Solutions</div>
+                    <h3 class="product-title" data-translate="prod2Title">CloudSync Enterprise</h3>
+                    <p class="product-description" data-translate="prod2Desc">
+                        Secure cloud platform for storing, syncing and sharing corporate data.
                     </p>
                     <ul class="product-features">
-                        <li>Неограничено хранилище</li>
-                        <li>256-bit криптиране</li>
-                        <li>Автоматичен backup</li>
-                        <li>24/7 техническа поддръжка</li>
+                        <li data-translate="prod2Feature1">Unlimited storage</li>
+                        <li data-translate="prod2Feature2">256-bit encryption</li>
+                        <li data-translate="prod2Feature3">Automatic backup</li>
+                        <li data-translate="prod2Feature4">24/7 technical support</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">
-                            €499 <span>/месец</span>
+                            €499 <span data-translate="perMonth">/month</span>
                         </div>
-                        <button class="product-btn">Поръчай</button>
+                        <button class="product-btn" data-translate="orderNow">Order Now</button>
                     </div>
                 </div>
             </div>
@@ -97,76 +100,76 @@
                     <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="TeamWork Manager">
                 </div>
                 <div class="product-content">
-                    <div class="product-category">Управление на Проекти</div>
-                    <h3 class="product-title">TeamWork Manager</h3>
-                    <p class="product-description">
-                        Интуитивна система за управление на проекти и екипи с вградени инструменти за комуникация.
+                    <div class="product-category" data-translate="prod3Category">Project Management</div>
+                    <h3 class="product-title" data-translate="prod3Title">TeamWork Manager</h3>
+                    <p class="product-description" data-translate="prod3Desc">
+                        Intuitive project and team management system with built-in communication tools.
                     </p>
                     <ul class="product-features">
-                        <li>Kanban и Gantt диаграми</li>
-                        <li>Видео конференции</li>
-                        <li>Проследяване на време</li>
-                        <li>Мобилно приложение</li>
+                        <li data-translate="prod3Feature1">Kanban and Gantt charts</li>
+                        <li data-translate="prod3Feature2">Video conferencing</li>
+                        <li data-translate="prod3Feature3">Time tracking</li>
+                        <li data-translate="prod3Feature4">Mobile app</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">
-                            €199 <span>/месец</span>
+                            €199 <span data-translate="perMonth">/month</span>
                         </div>
-                        <button class="product-btn">Поръчай</button>
+                        <button class="product-btn" data-translate="orderNow">Order Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Product 4 -->
             <div class="product-card">
-                <span class="product-badge">Бестселър</span>
+                <span class="product-badge" data-translate="badgeBestseller">Bestseller</span>
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80" alt="SecureGuard Pro">
                 </div>
                 <div class="product-content">
-                    <div class="product-category">Киберсигурност</div>
-                    <h3 class="product-title">SecureGuard Pro</h3>
-                    <p class="product-description">
-                        Комплексна защита срещу киберзаплахи с AI детекция на аномалии и автоматична защита.
+                    <div class="product-category" data-translate="prod4Category">Cybersecurity</div>
+                    <h3 class="product-title" data-translate="prod4Title">SecureGuard Pro</h3>
+                    <p class="product-description" data-translate="prod4Desc">
+                        Comprehensive protection against cyber threats with AI anomaly detection and automatic defense.
                     </p>
                     <ul class="product-features">
-                        <li>Защита в реално време</li>
-                        <li>Firewall и антивирус</li>
-                        <li>Мониторинг на трафик</li>
-                        <li>Автоматични актуализации</li>
+                        <li data-translate="prod4Feature1">Real-time protection</li>
+                        <li data-translate="prod4Feature2">Firewall and antivirus</li>
+                        <li data-translate="prod4Feature3">Traffic monitoring</li>
+                        <li data-translate="prod4Feature4">Automatic updates</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">
-                            €349 <span>/месец</span>
+                            €349 <span data-translate="perMonth">/month</span>
                         </div>
-                        <button class="product-btn">Поръчай</button>
+                        <button class="product-btn" data-translate="orderNow">Order Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Product 5 -->
             <div class="product-card">
-                <span class="product-badge new">Ново</span>
+                <span class="product-badge new" data-translate="badgeNew">New</span>
                 <div class="product-image">
                     <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&q=80" alt="AI Assistant Plus">
                 </div>
                 <div class="product-content">
-                    <div class="product-category">Изкуствен Интелект</div>
-                    <h3 class="product-title">AI Assistant Plus</h3>
-                    <p class="product-description">
-                        Интелигентен виртуален асистент, оптимизиращ работните процеси и автоматизиращ рутинни задачи.
+                    <div class="product-category" data-translate="prod5Category">Artificial Intelligence</div>
+                    <h3 class="product-title" data-translate="prod5Title">AI Assistant Plus</h3>
+                    <p class="product-description" data-translate="prod5Desc">
+                        Intelligent virtual assistant that optimizes workflows and automates routine tasks.
                     </p>
                     <ul class="product-features">
-                        <li>Обработка на естествен език</li>
-                        <li>Автоматизация на задачи</li>
-                        <li>Интеграция с CRM</li>
-                        <li>Многоезична поддръжка</li>
+                        <li data-translate="prod5Feature1">Natural language processing</li>
+                        <li data-translate="prod5Feature2">Task automation</li>
+                        <li data-translate="prod5Feature3">CRM integration</li>
+                        <li data-translate="prod5Feature4">Multi-language support</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">
-                            €399 <span>/месец</span>
+                            €399 <span data-translate="perMonth">/month</span>
                         </div>
-                        <button class="product-btn">Поръчай</button>
+                        <button class="product-btn" data-translate="orderNow">Order Now</button>
                     </div>
                 </div>
             </div>
@@ -177,22 +180,22 @@
                     <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80" alt="E-Commerce Suite">
                 </div>
                 <div class="product-content">
-                    <div class="product-category">Електронна Търговия</div>
-                    <h3 class="product-title">E-Commerce Suite</h3>
-                    <p class="product-description">
-                        Пълна платформа за електронна търговия с вградени маркетинг инструменти и анализ на продажби.
+                    <div class="product-category" data-translate="prod6Category">E-Commerce</div>
+                    <h3 class="product-title" data-translate="prod6Title">E-Commerce Suite</h3>
+                    <p class="product-description" data-translate="prod6Desc">
+                        Complete e-commerce platform with built-in marketing tools and sales analytics.
                     </p>
                     <ul class="product-features">
-                        <li>Неограничени продукти</li>
-                        <li>Множество платежни методи</li>
-                        <li>SEO оптимизация</li>
-                        <li>Email маркетинг</li>
+                        <li data-translate="prod6Feature1">Unlimited products</li>
+                        <li data-translate="prod6Feature2">Multiple payment methods</li>
+                        <li data-translate="prod6Feature3">SEO optimization</li>
+                        <li data-translate="prod6Feature4">Email marketing</li>
                     </ul>
                     <div class="product-footer">
                         <div class="product-price">
-                            €279 <span>/месец</span>
+                            €279 <span data-translate="perMonth">/month</span>
                         </div>
-                        <button class="product-btn">Поръчай</button>
+                        <button class="product-btn" data-translate="orderNow">Order Now</button>
                     </div>
                 </div>
             </div>
@@ -200,57 +203,57 @@
 
         <!-- Comparison Section -->
         <section class="comparison-section">
-            <h2 class="section-title">Сравнение на Планове</h2>
-            <p class="section-subtitle">Изберете плана, който най-добре отговаря на вашите нужди</p>
+            <h2 class="section-title" data-translate="comparisonTitle">Plan Comparison</h2>
+            <p class="section-subtitle" data-translate="comparisonSubtitle">Choose the plan that best fits your needs</p>
             
             <table class="comparison-table">
                 <thead>
                     <tr>
-                        <th>Функционалност</th>
-                        <th>Starter</th>
-                        <th>Professional</th>
-                        <th>Enterprise</th>
+                        <th data-translate="tableFeature">Feature</th>
+                        <th data-translate="planStarter">Starter</th>
+                        <th data-translate="planProfessional">Professional</th>
+                        <th data-translate="planEnterprise">Enterprise</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Брой потребители</td>
-                        <td>До 10</td>
-                        <td>До 50</td>
-                        <td>Неограничен</td>
+                        <td data-translate="tableUsers">Number of Users</td>
+                        <td data-translate="usersUpTo10">Up to 10</td>
+                        <td data-translate="usersUpTo50">Up to 50</td>
+                        <td data-translate="usersUnlimited">Unlimited</td>
                     </tr>
                     <tr>
-                        <td>Хранилище</td>
+                        <td data-translate="tableStorage">Storage</td>
                         <td>100 GB</td>
                         <td>500 GB</td>
-                        <td>Неограничено</td>
+                        <td data-translate="storageUnlimited">Unlimited</td>
                     </tr>
                     <tr>
-                        <td>API достъп</td>
+                        <td data-translate="tableApiAccess">API Access</td>
                         <td><span class="cross-icon">✗</span></td>
                         <td><span class="check-icon">✓</span></td>
                         <td><span class="check-icon">✓</span></td>
                     </tr>
                     <tr>
-                        <td>Техническа поддръжка</td>
+                        <td data-translate="tableTechSupport">Technical Support</td>
                         <td>Email</td>
                         <td>Email & Chat</td>
                         <td>24/7 Phone & Chat</td>
                     </tr>
                     <tr>
-                        <td>AI функции</td>
+                        <td data-translate="tableAiFeatures">AI Features</td>
                         <td><span class="cross-icon">✗</span></td>
                         <td><span class="check-icon">✓</span></td>
                         <td><span class="check-icon">✓</span></td>
                     </tr>
                     <tr>
-                        <td>Персонализация</td>
+                        <td data-translate="tableCustomization">Customization</td>
                         <td><span class="cross-icon">✗</span></td>
-                        <td>Ограничена</td>
-                        <td>Пълна</td>
+                        <td data-translate="customizationLimited">Limited</td>
+                        <td data-translate="customizationFull">Full</td>
                     </tr>
                     <tr>
-                        <td>Обучение</td>
+                        <td data-translate="tableTraining">Training</td>
                         <td><span class="cross-icon">✗</span></td>
                         <td>Online</td>
                         <td>Onsite & Online</td>
@@ -261,45 +264,45 @@
 
         <!-- Testimonials Section -->
         <section class="testimonials-section">
-            <h2 class="section-title">Какво Казват Нашите Клиенти</h2>
-            <p class="section-subtitle">Реални отзиви от доволни клиенти</p>
+            <h2 class="section-title" data-translate="testimonialsTitle">What Our Clients Say</h2>
+            <p class="section-subtitle" data-translate="testimonialsSubtitle">Real reviews from satisfied customers</p>
             
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "Business Analytics Pro трансформира начина, по който анализираме нашите данни. Невероятно мощен инструмент!"
+                    <p class="testimonial-text" data-translate="testimonial1Text">
+                        "Business Analytics Pro transformed the way we analyze our data. An incredibly powerful tool!"
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">ИП</div>
+                        <div class="author-avatar" data-translate="testimonial1Avatar">IP</div>
                         <div class="author-info">
-                            <h4>Иван Петров</h4>
-                            <p>CEO, TechStart Ltd.</p>
+                            <h4 data-translate="testimonial1Name">Ivan Petrov</h4>
+                            <p data-translate="testimonial1Position">CEO, TechStart Ltd.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "CloudSync Enterprise ни спести стотици часове работа. Синхронизацията е безупречна и сигурността е на високо ниво."
+                    <p class="testimonial-text" data-translate="testimonial2Text">
+                        "CloudSync Enterprise saved us hundreds of hours of work. The synchronization is flawless and security is top-notch."
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">МД</div>
+                        <div class="author-avatar" data-translate="testimonial2Avatar">MD</div>
                         <div class="author-info">
-                            <h4>Мария Димитрова</h4>
-                            <p>CTO, Digital Solutions</p>
+                            <h4 data-translate="testimonial2Name">Maria Dimitrova</h4>
+                            <p data-translate="testimonial2Position">CTO, Digital Solutions</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">
-                        "Използваме TeamWork Manager вече 2 години. Продуктивността на екипа се увеличи с 40%. Силно препоръчвам!"
+                    <p class="testimonial-text" data-translate="testimonial3Text">
+                        "We've been using TeamWork Manager for 2 years now. Team productivity increased by 40%. Highly recommend!"
                     </p>
                     <div class="testimonial-author">
-                        <div class="author-avatar">ГГ</div>
+                        <div class="author-avatar" data-translate="testimonial3Avatar">GG</div>
                         <div class="author-info">
-                            <h4>Георги Георгиев</h4>
-                            <p>Project Manager, CreativeHub</p>
+                            <h4 data-translate="testimonial3Name">Georgi Georgiev</h4>
+                            <p data-translate="testimonial3Position">Project Manager, CreativeHub</p>
                         </div>
                     </div>
                 </div>
@@ -310,11 +313,11 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="cta-content">
-            <h2>Готови ли сте да започнете?</h2>
-            <p>Изпробвайте нашите продукти безплатно за 30 дни. Без кредитна карта.</p>
+            <h2 data-translate="ctaTitle">Ready to Get Started?</h2>
+            <p data-translate="ctaSubtitle">Try our products free for 30 days. No credit card required.</p>
             <div class="cta-buttons">
-                <a href="#" class="cta-button">Започни безплатен тест</a>
-                <a href="#" class="cta-button secondary">Свържи се с нас</a>
+                <a href="#" class="cta-button" data-translate="ctaStartTrial">Start Free Trial</a>
+                <a href="#" class="cta-button secondary" data-translate="ctaContactUs">Contact Us</a>
             </div>
         </div>
     </section>
@@ -324,25 +327,25 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Бързи Връзки</h3>
+                    <h3 data-translate="footerQuickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Начало</a></li>
-                        <li><a href="#about">За Нас</a></li>
-                        <li><a href="services.html">Услуги</a></li>
-                        <li><a href="products.html">Продукти</a></li>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li><a href="#about" data-translate="about">About</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Поддръжка</h3>
+                    <h3 data-translate="footerSupport">Support</h3>
                     <ul>
-                        <li><a href="#faq">Често Задавани Въпроси</a></li>
-                        <li><a href="#help">Помощ</a></li>
-                        <li><a href="#contact">Контакти</a></li>
-                        <li><a href="#privacy">Поверителност</a></li>
+                        <li><a href="#faq" data-translate="footerFaq">FAQ</a></li>
+                        <li><a href="#help" data-translate="footerHelp">Help</a></li>
+                        <li><a href="#contact" data-translate="footerContact">Contact</a></li>
+                        <li><a href="#privacy" data-translate="footerPrivacy">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Свържете се</h3>
+                    <h3 data-translate="footerConnect">Connect</h3>
                     <ul>
                         <li><a href="#facebook">Facebook</a></li>
                         <li><a href="#twitter">Twitter</a></li>
@@ -352,11 +355,12 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Company Name. Всички права запазени. | <a href="#terms">Условия за ползване</a> | <a href="#privacy">Политика за поверителност</a></p>
+                <p>&copy; 2026 Company Name. <span data-translate="footerRights">All rights reserved.</span> | <a href="#terms" data-translate="footerTerms">Terms of Use</a> | <a href="#privacy" data-translate="footerPrivacyPolicy">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
 
+    <script src="js/language.js"></script>
     <script src="js/products.js"></script>
 </body>
 </html>

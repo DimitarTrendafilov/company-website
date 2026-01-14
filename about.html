@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>За Нас - Company Name</title>
+    <title>About Us - Company Name</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
         body {
@@ -200,101 +200,104 @@
     <!-- Header Section -->
     <header>
         <div class="header-container">
-            <div class="logo">Company Name</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Начало</a></li>
-                    <li><a href="about.html" class="active">За Нас</a></li>
-                    <li><a href="services.html">Услуги</a></li>
-                    <li><a href="products.html">Продукти</a></li>
-                    <li><a href="contact.html">Контакти</a></li>
-                </ul>
-            </nav>
+            <div class="logo" data-translate="logo">Company Name</div>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li><a href="about.html" data-translate="about" class="active">About</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
+                        <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="langToggle" title="Switch Language">EN</button>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>За Нас</h1>
-        <p>Иновации, качество и отдаденост – това е нашата мисия</p>
+        <h1 data-translate="aboutHeroTitle">About Us</h1>
+        <p data-translate="aboutHeroSubtitle">Innovation, quality and dedication – that's our mission</p>
     </section>
 
     <!-- Main Content -->
     <main>
         <!-- About Section -->
         <section class="about-section">
-            <h2>Нашата История</h2>
-            <p>
-                Company Name е основана през 2010 година с визия да трансформира начина, по който бизнесът използва технологиите. 
-                Започнахме като малък екип от ентусиасти, обединени от обща страст към иновациите и качествените решения.
+            <h2 data-translate="ourStoryTitle">Our Story</h2>
+            <p data-translate="ourStoryP1">
+                Company Name was founded in 2010 with a vision to transform the way businesses use technology. 
+                We started as a small team of enthusiasts united by a shared passion for innovation and quality solutions.
             </p>
-            <p>
-                През годините израснахме до водеща компания в областта на бизнес технологиите, обслужваща стотици клиенти 
-                в България и чужбина. Нашият успех се крие в посвещението към клиентите и непрекъснатото усъвършенстване.
+            <p data-translate="ourStoryP2">
+                Over the years, we have grown into a leading company in the field of business technology, serving hundreds of clients 
+                in Bulgaria and abroad. Our success lies in our dedication to clients and continuous improvement.
             </p>
-            <p>
-                Днес сме горди с екип от над 50 професионалисти, модерни офиси и портфолио от успешно реализирани проекти 
-                в различни индустрии – от финанси и здравеопазване до търговия и производство.
+            <p data-translate="ourStoryP3">
+                Today we are proud of a team of over 50 professionals, modern offices and a portfolio of successfully completed projects 
+                in various industries – from finance and healthcare to trade and manufacturing.
             </p>
         </section>
 
         <!-- Stats Section -->
         <section class="about-section">
-            <h2>Нашите Постижения</h2>
+            <h2 data-translate="achievementsTitle">Our Achievements</h2>
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number">500+</div>
-                    <div class="stat-label">Проекта</div>
+                    <div class="stat-label" data-translate="projects">Projects</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">200+</div>
-                    <div class="stat-label">Клиенти</div>
+                    <div class="stat-label" data-translate="clients">Clients</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">15+</div>
-                    <div class="stat-label">Години Опит</div>
+                    <div class="stat-label" data-translate="yearsExp">Years Experience</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number">50+</div>
-                    <div class="stat-label">Специалисти</div>
+                    <div class="stat-label" data-translate="specialists">Specialists</div>
                 </div>
             </div>
         </section>
 
         <!-- Team Section -->
         <section class="team-section">
-            <h2 class="about-section" style="background: transparent; box-shadow: none; text-align: center;">Нашият Екип</h2>
+            <h2 class="about-section" style="background: transparent; box-shadow: none; text-align: center;" data-translate="ourTeamTitle">Our Team</h2>
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-photo">👨‍💼</div>
                     <div class="member-info">
-                        <h3 class="member-name">Иван Петров</h3>
-                        <p class="member-position">Изпълнителен Директор</p>
-                        <p class="member-bio">15 години опит в IT индустрията. Визионер с фокус върху иновациите.</p>
+                        <h3 class="member-name">Ivan Petrov</h3>
+                        <p class="member-position" data-translate="ceo">Chief Executive Officer</p>
+                        <p class="member-bio" data-translate="ceoBio">15 years of experience in the IT industry. A visionary focused on innovation.</p>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">👩‍💼</div>
                     <div class="member-info">
-                        <h3 class="member-name">Мария Димитрова</h3>
-                        <p class="member-position">Технически Директор</p>
-                        <p class="member-bio">Експерт в софтуерна архитектура и управление на технологични проекти.</p>
+                        <h3 class="member-name">Maria Dimitrova</h3>
+                        <p class="member-position" data-translate="cto">Chief Technology Officer</p>
+                        <p class="member-bio" data-translate="ctoBio">Expert in software architecture and technology project management.</p>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">👨‍💻</div>
                     <div class="member-info">
-                        <h3 class="member-name">Георги Георгиев</h3>
-                        <p class="member-position">Мениджър Развойна</p>
-                        <p class="member-bio">Passionate developer и лидер на екип от талантливи програмисти.</p>
+                        <h3 class="member-name">George Georgiev</h3>
+                        <p class="member-position" data-translate="devManager">Development Manager</p>
+                        <p class="member-bio" data-translate="devManagerBio">Passionate developer and leader of a team of talented programmers.</p>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">👩‍🎨</div>
                     <div class="member-info">
-                        <h3 class="member-name">Елена Стоянова</h3>
-                        <p class="member-position">Дизайн Директор</p>
-                        <p class="member-bio">Креативен ум с фокус върху user experience и визуална комуникация.</p>
+                        <h3 class="member-name">Elena Stoyanova</h3>
+                        <p class="member-position" data-translate="designDirector">Design Director</p>
+                        <p class="member-bio" data-translate="designDirectorBio">Creative mind with a focus on user experience and visual communication.</p>
                     </div>
                 </div>
             </div>
@@ -302,34 +305,34 @@
 
         <!-- Values Section -->
         <section class="values-section">
-            <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 1rem;">Нашите Ценности</h2>
+            <h2 style="text-align: center; font-size: 2.5rem; color: #333; margin-bottom: 1rem;" data-translate="ourValuesTitle">Our Values</h2>
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">🎯</div>
-                    <h3 class="value-title">Качество</h3>
-                    <p class="value-description">
-                        Стремим се към най-високи стандарти във всеки проект и взаимодействие с клиентите.
+                    <h3 class="value-title" data-translate="qualityTitle">Quality</h3>
+                    <p class="value-description" data-translate="qualityDesc">
+                        We strive for the highest standards in every project and interaction with clients.
                     </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">💡</div>
-                    <h3 class="value-title">Иновации</h3>
-                    <p class="value-description">
-                        Непрекъснато търсим нови технологии и подходи за решаване на бизнес предизвикателства.
+                    <h3 class="value-title" data-translate="innovationTitle">Innovation</h3>
+                    <p class="value-description" data-translate="innovationDesc">
+                        We constantly seek new technologies and approaches to solving business challenges.
                     </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">🤝</div>
-                    <h3 class="value-title">Партньорство</h3>
-                    <p class="value-description">
-                        Изграждаме дългосрочни отношения, основани на доверие и взаимна полза.
+                    <h3 class="value-title" data-translate="partnershipTitle">Partnership</h3>
+                    <p class="value-description" data-translate="partnershipDesc">
+                        We build long-term relationships based on trust and mutual benefit.
                     </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">🚀</div>
-                    <h3 class="value-title">Ангажираност</h3>
-                    <p class="value-description">
-                        Отдадени сме на успеха на нашите клиенти и техния растеж.
+                    <h3 class="value-title" data-translate="commitmentTitle">Commitment</h3>
+                    <p class="value-description" data-translate="commitmentDesc">
+                        We are dedicated to the success of our clients and their growth.
                     </p>
                 </div>
             </div>
@@ -341,37 +344,38 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Бързи Връзки</h3>
+                    <h3 data-translate="quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Начало</a></li>
-                        <li><a href="about.html">За Нас</a></li>
-                        <li><a href="services.html">Услуги</a></li>
-                        <li><a href="products.html">Продукти</a></li>
+                        <li><a href="index.html" data-translate="homeLink">Home</a></li>
+                        <li><a href="about.html" data-translate="aboutUs">About Us</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Поддръжка</h3>
+                    <h3 data-translate="support">Support</h3>
                     <ul>
-                        <li><a href="#faq">Често Задавани Въпроси</a></li>
-                        <li><a href="#help">Помощ</a></li>
-                        <li><a href="contact.html">Контакти</a></li>
-                        <li><a href="#privacy">Поверителност</a></li>
+                        <li><a href="#faq" data-translate="faq">FAQ</a></li>
+                        <li><a href="#help" data-translate="helpCenter">Help Center</a></li>
+                        <li><a href="contact.html" data-translate="contactUs">Contact Us</a></li>
+                        <li><a href="#privacy" data-translate="privacyPolicy">Privacy Policy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Свържете се</h3>
+                    <h3 data-translate="connect">Connect</h3>
                     <ul>
-                        <li><a href="#facebook">Facebook</a></li>
-                        <li><a href="#twitter">Twitter</a></li>
-                        <li><a href="#linkedin">LinkedIn</a></li>
-                        <li><a href="#instagram">Instagram</a></li>
+                        <li><a href="#facebook" data-translate="facebook">Facebook</a></li>
+                        <li><a href="#twitter" data-translate="twitter">Twitter</a></li>
+                        <li><a href="#linkedin" data-translate="linkedin">LinkedIn</a></li>
+                        <li><a href="#instagram" data-translate="instagram">Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Company Name. Всички права запазени. | <a href="#terms">Условия за ползване</a> | <a href="#privacy">Политика за поверителност</a></p>
+                <p>&copy; 2026 <span data-translate="logo">Company Name</span>. <span data-translate="copyright">All rights reserved.</span> | <a href="#terms" data-translate="terms">Terms of Service</a> | <a href="#privacy" data-translate="privacyPolicy">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
+    <script src="js/language.js"></script>
 </body>
 </html>
