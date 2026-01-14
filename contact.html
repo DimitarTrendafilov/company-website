@@ -245,11 +245,11 @@
             <div class="nav-wrapper">
                 <nav>
                     <ul>
-                        <li><a href="index.html" data-translate="nav.home">Home</a></li>
-                        <li><a href="about.html" data-translate="nav.about">About</a></li>
-                        <li><a href="services.html" data-translate="nav.services">Services</a></li>
-                        <li><a href="products.html" data-translate="nav.products">Products</a></li>
-                        <li><a href="contact.html" class="active" data-translate="nav.contact">Contact</a></li>
+                        <li><a href="index.html" data-translate="home">Home</a></li>
+                        <li><a href="about.html" data-translate="about">About</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
+                        <li><a href="contact.html" class="active" data-translate="contact">Contact</a></li>
                     </ul>
                 </nav>
                 <button id="langToggle" title="Switch Language">EN</button>
@@ -259,8 +259,8 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1 data-translate="contact.hero.title">Get in Touch</h1>
-        <p data-translate="contact.hero.subtitle">We look forward to your questions and suggestions. Our team is at your disposal!</p>
+        <h1 data-translate="contactHeroTitle">Get in Touch</h1>
+        <p data-translate="contactHeroSubtitle">We look forward to your questions and suggestions. Our team is at your disposal!</p>
     </section>
 
     <!-- Main Content -->
@@ -269,23 +269,23 @@
         <div class="contact-container">
             <!-- Contact Info -->
             <div class="contact-info">
-                <h2 data-translate="contact.info.title">Contact Information</h2>
+                <h2 data-translate="contactInfoTitle">Contact Information</h2>
                 
                 <div class="info-item">
                     <div class="info-icon">📍</div>
                     <div class="info-content">
-                        <h3 data-translate="contact.info.address.label">Address</h3>
-                        <p data-translate="contact.info.address.text">123 Vitosha Blvd.<br>Sofia 1000, Bulgaria</p>
+                        <h3 data-translate="addressLabel">Address</h3>
+                        <p data-translate="addressText">123 Vitosha Blvd.<br>Sofia 1000, Bulgaria</p>
                     </div>
                 </div>
 
                 <div class="info-item">
                     <div class="info-icon">📧</div>
                     <div class="info-content">
-                        <h3 data-translate="contact.info.email.label">Email</h3>
+                        <h3 data-translate="emailLabel">Email</h3>
                         <p>
-                            <span data-translate="contact.info.email.general">General:</span> <a href="mailto:info@company.bg">info@company.bg</a><br>
-                            <span data-translate="contact.info.email.support">Support:</span> <a href="mailto:support@company.bg">support@company.bg</a>
+                            <span data-translate="emailGeneral">General:</span> <a href="mailto:info@company.bg">info@company.bg</a><br>
+                            <span data-translate="emailSupport">Support:</span> <a href="mailto:support@company.bg">support@company.bg</a>
                         </p>
                     </div>
                 </div>
@@ -293,10 +293,10 @@
                 <div class="info-item">
                     <div class="info-icon">📞</div>
                     <div class="info-content">
-                        <h3 data-translate="contact.info.phone.label">Phone</h3>
+                        <h3 data-translate="phoneLabel">Phone</h3>
                         <p>
-                            <span data-translate="contact.info.phone.office">Office:</span> <a href="tel:+35920000000">+359 2 000 0000</a><br>
-                            <span data-translate="contact.info.phone.mobile">Mobile:</span> <a href="tel:+359888000000">+359 888 000 000</a>
+                            <span data-translate="phoneOffice">Office:</span> <a href="tel:+35920000000">+359 2 000 0000</a><br>
+                            <span data-translate="phoneMobile">Mobile:</span> <a href="tel:+359888000000">+359 888 000 000</a>
                         </p>
                     </div>
                 </div>
@@ -304,10 +304,10 @@
                 <div class="info-item">
                     <div class="info-icon">🕐</div>
                     <div class="info-content">
-                        <h3 data-translate="contact.info.hours.label">Working Hours</h3>
+                        <h3 data-translate="hoursLabel">Working Hours</h3>
                         <p>
-                            <span data-translate="contact.info.hours.weekdays">Monday - Friday: 9:00 AM - 6:00 PM</span><br>
-                            <span data-translate="contact.info.hours.weekend">Saturday - Sunday: Closed</span>
+                            <span data-translate="hoursWeekdays">Monday - Friday: 9:00 AM - 6:00 PM</span><br>
+                            <span data-translate="hoursWeekend">Saturday - Sunday: Closed</span>
                         </p>
                     </div>
                 </div>
@@ -315,55 +315,55 @@
 
             <!-- Contact Form -->
             <div class="contact-form">
-                <h2 data-translate="contact.form.title">Send an Inquiry</h2>
+                <h2 data-translate="formTitle">Send an Inquiry</h2>
                 <form id="contactForm">
                     <div class="form-group">
-                        <label for="name" data-translate="contact.form.name">Your Name *</label>
+                        <label for="name" data-translate="formName">Your Name *</label>
                         <input type="text" id="name" name="name" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email" data-translate="contact.form.email">Email Address *</label>
+                        <label for="email" data-translate="formEmail">Email Address *</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="phone" data-translate="contact.form.phone">Phone</label>
+                        <label for="phone" data-translate="formPhone">Phone</label>
                         <input type="tel" id="phone" name="phone">
                     </div>
 
                     <div class="form-group">
-                        <label for="subject" data-translate="contact.form.subject">Inquiry Subject</label>
+                        <label for="subject" data-translate="formSubject">Inquiry Subject</label>
                         <select id="subject" name="subject">
-                            <option value="general" data-translate="contact.form.subject.general">General Information</option>
-                            <option value="services" data-translate="contact.form.subject.services">Services</option>
-                            <option value="products" data-translate="contact.form.subject.products">Products</option>
-                            <option value="support" data-translate="contact.form.subject.support">Technical Support</option>
-                            <option value="partnership" data-translate="contact.form.subject.partnership">Partnership</option>
+                            <option value="general" data-translate="subjectGeneral">General Information</option>
+                            <option value="services" data-translate="subjectServices">Services</option>
+                            <option value="products" data-translate="subjectProducts">Products</option>
+                            <option value="support" data-translate="subjectSupport">Technical Support</option>
+                            <option value="partnership" data-translate="subjectPartnership">Partnership</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="message" data-translate="contact.form.message">Your Message *</label>
+                        <label for="message" data-translate="formMessage">Your Message *</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
 
-                    <button type="submit" class="submit-btn" data-translate="contact.form.submit">Send Message</button>
+                    <button type="submit" class="submit-btn" data-translate="formSubmit">Send Message</button>
                 </form>
             </div>
         </div>
 
         <!-- Map Section -->
         <div class="map-section">
-            <h2 data-translate="contact.map.title">Find Us</h2>
-            <div class="map-container" data-translate="contact.map.placeholder">
+            <h2 data-translate="mapTitle">Find Us</h2>
+            <div class="map-container" data-translate="mapPlaceholder">
                 🗺️ Google Maps will load here
             </div>
         </div>
 
         <!-- Social Media Section -->
         <div class="social-section">
-            <h2 data-translate="contact.social.title">Follow Us</h2>
+            <h2 data-translate="socialTitle">Follow Us</h2>
             <div class="social-links">
                 <a href="#" class="social-link" title="Facebook">📘</a>
                 <a href="#" class="social-link" title="Twitter">🐦</a>
@@ -379,35 +379,35 @@
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 data-translate="footer.quickLinks.title">Quick Links</h3>
+                    <h3 data-translate="quickLinks">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html" data-translate="footer.quickLinks.home">Home</a></li>
-                        <li><a href="about.html" data-translate="footer.quickLinks.about">About</a></li>
-                        <li><a href="services.html" data-translate="footer.quickLinks.services">Services</a></li>
-                        <li><a href="products.html" data-translate="footer.quickLinks.products">Products</a></li>
+                        <li><a href="index.html" data-translate="homeLink">Home</a></li>
+                        <li><a href="about.html" data-translate="aboutUs">About</a></li>
+                        <li><a href="services.html" data-translate="services">Services</a></li>
+                        <li><a href="products.html" data-translate="products">Products</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3 data-translate="footer.support.title">Support</h3>
+                    <h3 data-translate="support">Support</h3>
                     <ul>
-                        <li><a href="#faq" data-translate="footer.support.faq">FAQ</a></li>
-                        <li><a href="#help" data-translate="footer.support.help">Help</a></li>
-                        <li><a href="contact.html" data-translate="footer.support.contact">Contact</a></li>
-                        <li><a href="#privacy" data-translate="footer.support.privacy">Privacy</a></li>
+                        <li><a href="#faq" data-translate="faq">FAQ</a></li>
+                        <li><a href="#help" data-translate="helpCenter">Help</a></li>
+                        <li><a href="contact.html" data-translate="contactUs">Contact</a></li>
+                        <li><a href="#privacy" data-translate="privacyPolicy">Privacy</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3 data-translate="footer.connect.title">Connect</h3>
+                    <h3 data-translate="connect">Connect</h3>
                     <ul>
-                        <li><a href="#facebook" data-translate="footer.connect.facebook">Facebook</a></li>
-                        <li><a href="#twitter" data-translate="footer.connect.twitter">Twitter</a></li>
-                        <li><a href="#linkedin" data-translate="footer.connect.linkedin">LinkedIn</a></li>
-                        <li><a href="#instagram" data-translate="footer.connect.instagram">Instagram</a></li>
+                        <li><a href="#facebook" data-translate="facebook">Facebook</a></li>
+                        <li><a href="#twitter" data-translate="twitter">Twitter</a></li>
+                        <li><a href="#linkedin" data-translate="linkedin">LinkedIn</a></li>
+                        <li><a href="#instagram" data-translate="instagram">Instagram</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p><span data-translate="footer.copyright">&copy; 2026 Company Name. All rights reserved.</span> | <a href="#terms" data-translate="footer.terms">Terms of Use</a> | <a href="#privacy" data-translate="footer.privacyPolicy">Privacy Policy</a></p>
+                <p><span data-translate="logo">Company Name</span>. <span data-translate="copyright">All rights reserved.</span> | <a href="#terms" data-translate="terms">Terms of Service</a> | <a href="#privacy" data-translate="privacyPolicy">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
